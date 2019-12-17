@@ -1,6 +1,6 @@
 ### [LC35 20191214](https://leetcode.com/problems/search-insert-position/)
 
-Binary Search,  TAG_Template
+Binary Search,  Template,
 
 ```java
 class Solution {
