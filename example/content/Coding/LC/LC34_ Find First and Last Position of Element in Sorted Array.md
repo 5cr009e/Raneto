@@ -54,3 +54,49 @@ class Solution {
 }
 ```
 
+Recursion version:
+```java
+class Solution {
+    public int[] searchRange(int[] nums, int target) {
+        int[] result = {-1, -1};
+        if ( nums.length == 0){
+            return result;
+        }
+        else{
+            int left = binarySearch(nums, 0, nums.length-1, target, true);
+            int right = binarySearch(nums, 0, nums.length-1, target, false);
+            if (nums[left]==target && nums[right]==target){
+                result[0] = left;
+                result[1] = right;
+            }
+        }
+        return result;
+        
+    }
+    
+    int binarySearch(int[] nums, int low, int high, int target, boolean left){
+        if (low >= high){
+            return low;
+        }
+        int mid = low + (high - low) / 2;
+        if (nums[mid] < target){
+            return binarySearch(nums, mid+1, high, target, left);
+        }
+        else if (nums[mid] > target){
+            return binarySearch(nums, low, mid, target, left);
+        }
+        else { // for nums[mid] = target
+            if(left){
+                if (mid == 0 || nums[mid-1] < target){
+                    return mid;
+                }
+                else {return binarySearch(nums, low, mid, target, left);}
+            }
+            else {
+                if (mid == nums.length-1 || nums[mid+1] > target) {return mid;}
+                else {return binarySearch(nums, mid+1, high, target, left);}
+            }
+        }
+    }
+}
+```
