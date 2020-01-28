@@ -1,4 +1,4 @@
-LC345[https://leetcode.com/problems/reverse-vowels-of-a-string/description/]
+### [LC345](https://leetcode.com/problems/reverse-vowels-of-a-string/description/)
 
 Be cautious with a[i++] and b[j--].
 Using char[] or StringBuilder instead of String when it's changing rapidly. 
