@@ -3,16 +3,12 @@
 #### 简历上的论文准备
 
 #### Coding
-
 - python传参，深浅拷贝
 - C++虚函数，纯虚函数，多态哪两种和实现，底层
 - DP
 - 外排
 
-
-
 #### DL
-
 正则化， 超参数，避免过拟合
 
 Python，Linux， 线程通信，继承通信，python类即成
@@ -29,10 +25,7 @@ BN的原理及使用
 
 卷积操作的计算次数
 
-#### 
-
 ### [面经2](https://www.1point3acres.com/bbs/interview/machine-learning-471419.html)
-
 #### 一轮
 
 [LC493](https://leetcode.com/problems/reverse-pairs/)
@@ -42,9 +35,7 @@ BN的原理及使用
 博弈，找到均衡
 
 ### [面经3](https://blog.csdn.net/weixin_41278720/article/details/87908220)
-
 #### 一面
-
 改善rpn和nms
 
 iounet
